@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elon Burger Coin 🚀🍔</title>
+  <meta name="description" content="Elon Burger Coin — der leckerste Meme-Coin: Spaß, Community und Zukunft." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="Elon Burger Coin 🚀🍔" />
+  <meta property="og:description" content="Der leckerste Meme-Coin: Spaß, Community & Wachstumspotential." />
+  <meta property="og:image" content="elon_burger_coin.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0a0a0a;
+      --card:#111;
+      --accent:#f4b400;
+      --muted:#9aa1a8;
+      --radius:12px;
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#050505 0%, #0f0f0f 100%);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* skip link for keyboard users */
+    .skip-link{
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus{
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: .5rem .75rem;
+      background:#000;
+      border-radius:6px;
+      z-index:1000;
+    }
+
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px;}
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:28px 0;
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:14px;
+      background:linear-gradient(180deg,#ffd54a,#f4b400);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 6px 18px rgba(0,0,0,0.6), inset 0 -4px 6px rgba(255,255,255,0.08);
+      flex-shrink:0;
+    }
+    .logo svg{width:34px;height:34px;display:block}
+
+    header h1{font-size:clamp(1.1rem,2.6vw,1.5rem);margin:0;font-weight:700;color:var(--accent)}
+    header p{margin:0;color:var(--muted);font-size:.95rem}
+
+    main{padding:28px 0}
+    .hero{
+      display:flex;
+      gap:32px;
+      align-items:center;
+      justify-content:space-between;
+      padding:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:var(--radius);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+    }
+
+    .hero-content{flex:1;min-width:0}
+    .hero h2{font-size:clamp(1.6rem,4vw,2.6rem);margin:0 0 10px}
+    .hero p{margin:0;color:#d7d7d7;font-size:1.05rem}
+
+    .hero-visual{
+      width:320px;
+      max-width:40%;
+      flex:0 0 320px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg, rgba(244,180,0,0.12), rgba(255,255,255,0.02));
+      border-radius:14px;
+      padding:18px;
+    }
+    .hero-visual img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 10px 30px rgba(0,0,0,0.5)}
+
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:#081216;
+      padding:12px 20px;
+      margin-top:18px;
+      font-weight:700;
+      border-radius:10px;
+      text-decoration:none;
+      transition:transform .12s ease, box-shadow .12s ease;
+      box-shadow:0 6px 18px rgba(244,180,0,0.12);
+    }
+    .btn:hover{transform:translateY(-3px)}
+    .btn:focus-visible{outline:3px solid rgba(244,180,0,0.25);outline-offset:4px}
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:18px;
+      margin-top:28px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+      padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);
+      color:#eaeaea;
+    }
+    .card h3{margin:0 0 8px;font-size:1.05rem}
+    .card p{margin:0;color:var(--muted);font-size:.95rem}
+
+    footer{margin-top:30px;padding:18px 0;color:var(--muted);font-size:.9rem;text-align:center}
+
+    /* Responsive tweaks */
+    @media (max-width:900px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero-visual{width:100%;max-width:320px;flex-basis:auto}
+      header{flex-direction:column;align-items:flex-start;gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <div class="wrap">
+    <header>
+      <div class="brand" aria-hidden="true">
+        <div class="logo" role="img" aria-label="Elon Burger Coin Logo">
+          <!-- simple SVG coin/burger placeholder -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#fff1c6"/>
+            <rect x="10" y="28" width="44" height="8" rx="4" fill="#e76f2f"/>
+            <rect x="12" y="32" width="40" height="3" rx="1.5" fill="#6b3f1b"/>
+          </svg>
+        </div>
+        <div>
+          <h1>Elon Burger Coin</h1>
+          <p>Der leckerste Coin im Crypto‑Universum 🚀</p>
+        </div>
+      </div>
+
+      <nav aria-label="Hauptnavigation">
+        <a class="btn" href="#buy" role="button">Jetzt kaufen</a>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h2 id="hero-title">Spaß, Community & Wachstum 🚀</h2>
+          <p>Elon Burger Coin ist ein Meme‑Token, das Innovation und Gemeinschaft verbindet — mit Spaßfaktor und starker Brand-Identity.</p>
+          <a class="btn" href="#buy" aria-label="Elon Burger Coin kaufen">Jetzt kaufen</a>
+
+          <div class="features" style="margin-top:22px;">
+            <div class="card">
+              <h3>🔥 Community-driven</h3>
+              <p>Starke, aktive Community und Social‑Momentum.</p>
+            </div>
+            <div class="card">
+              <h3>🍔 Branding</h3>
+              <p>Unverwechselbares Design & Meme‑Potenzial.</p>
+            </div>
+            <div class="card">
+              <h3>💸 Wachstum</h3>
+              <p>Tokenomics mit Skalierungsplänen (Beispiel).</p>
+            </div>
+            <div class="card">
+              <h3>🔒 Sicherheit</h3>
+              <p>Empfehlung: Smart‑Contract‑Audit bevor Launch.</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-visual" aria-hidden="false">
+          <!-- local placeholder SVG — replace with your PNG if available -->
+          <img src="elon_burger_coin.svg" alt="Elon Burger Coin — Logo / Illustration">
+        </figure>
+      </section>
+
+      <section id="buy" style="margin-top:28px;">
+        <h2>Was ist der Elon Burger Coin?</h2>
+        <p>Eine spaßige Meme‑Kryptowährung, die Geschmack, Gemeinschaft und Zukunftsvisionen verbindet.</p>
+
+        <h2 style="margin-top:20px;">Warum investieren?</h2>
+        <ul style="padding-left:1rem;line-height:1.6;">
+          <li>🔥 Meme‑Token mit starker Community</li>
+          <li>🍔 Einzigartiges Branding</li>
+          <li>💸 Starkes Wachstumspotential</li>
+          <li>🚀 Zukunftsvision mit Spaßfaktor</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Elon Burger Coin • All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
