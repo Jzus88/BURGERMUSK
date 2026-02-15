@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Elon Burger Coin">
+  <defs>
+    <radialGradient id="g" cx="30%" cy="25%">
+      <stop offset="0%" stop-color="#fff7d9"/>
+      <stop offset="60%" stop-color="#ffd54a"/>
+      <stop offset="100%" stop-color="#f4b400"/>
+    </radialGradient>
+  </defs>
+  <!-- coin -->
+  <circle cx="160" cy="160" r="150" fill="url(#g)" stroke="#e0a800" stroke-width="6"/>
+
+  <!-- burger: bun top -->
+  <ellipse cx="160" cy="150" rx="95" ry="28" fill="#f4a460" />
+  <!-- sesame -->
+  <g fill="#fff8d6" opacity="0.9">
+    <ellipse cx="128" cy="138" rx="4" ry="2"/>
+    <ellipse cx="147" cy="132" rx="3.5" ry="2"/>
+    <ellipse cx="175" cy="130" rx="3.5" ry="2"/>
+    <ellipse cx="196" cy="136" rx="3" ry="1.5"/>
+  </g>
+
+  <!-- patty -->
+  <rect x="80" y="168" width="160" height="18" rx="8" fill="#6b3f1b" />
+  <!-- lettuce -->
+  <path d="M92 162c8-6 18-8 28-6s18 6 28 6 18-2 28-6 20-4 28 6" fill="#7fc97f" opacity="0.95"/>
+
+  <!-- bun bottom -->
+  <ellipse cx="160" cy="200" rx="96" ry="22" fill="#e39a46"/>
+
+  <!-- subtle shine -->
+  <path d="M70 80c40-30 140-28 180 6" stroke="#ffffff" stroke-opacity="0.08" stroke-width="16" fill="none" stroke-linecap="round"/>
+</svg>
